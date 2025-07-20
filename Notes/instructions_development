@@ -1,0 +1,5 @@
+1. Building the docker image: docker build -t your-flask-app .
+This reads our docker file, create image for our project and tags it as "your-flask-app"
+
+2. Running the container: docker run -p 5000:5000 your-flask-app
+Starts a container from the image of our app

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitalGlow</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/homePage.css') }}?v={{ css_version }}">
+</head>
+<body>
+  <div class="left-pane">
+    <div class="left-top">
+      <a href="{{ url_for('auth.signup') }}"><button class="signup-btn">Sign Up / Get Started</button></a>
+      <div class="marketing-text">
+        Discover trainers, join challenges, and get AI-powered fitness & nutrition guidance.
+      </div>
+      <div class="feature-buttons">
+        <div class="feature-button" onclick="scrollToSection('trainerView')">Trainer Dashboard</div>
+        <div class="feature-button" onclick="scrollToSection('clientView')">Client Experience</div>
+        <div class="feature-button" onclick="scrollToSection('aiView')">AI Engine Insights</div>
+      </div>
+    </div>
+    <div class="footer">
+      Contact Us: support@vitalglow.ai<br>
+      Follow: IG / X / LinkedIn<br>
+      Terms | Privacy
+    </div>
+  </div>
+
+  <div class="right-pane">
+    <div class="section" id="overview">
+      <h2>Welcome to VitalGlow</h2>
+      <p>
+        VitalGlow is your fitness companion that connects clients and trainers, launches exciting challenges, and provides powerful AI-driven insights for workouts and nutrition.
+      </p>
+      <div class="interactive">
+        <button>Find Trainers</button>
+        <button>Join Challenges</button>
+        <button>AI Guided Plans</button>
+      </div>
+    </div>
+
+    <div class="section" id="trainerView">
+      <h2>Trainer Dashboard</h2>
+      <p>
+        Trainers can create and manage challenges, communicate with clients, monitor performance, and showcase their expertise using customizable dashboards.
+      </p>
+      <div class="interactive">
+        <img src="https://via.placeholder.com/150" alt="Trainer UI" />
+        <img src="https://via.placeholder.com/150" alt="Client Metrics" />
+      </div>
+    </div>
+
+    <div class="section" id="clientView">
+      <h2>Client Experience</h2>
+      <p>
+        Clients discover top trainers, join personalized challenges, track fitness milestones, and enjoy a vibrant fitness community driven by goals and progress.
+      </p>
+      <div class="interactive">
+        <button>View Progress</button>
+        <button>Start a Program</button>
+        <img src="https://via.placeholder.com/150" alt="Client Profile" />
+      </div>
+    </div>
+
+    <div class="section" id="aiView">
+      <h2>AI Engine Insights</h2>
+      <p>
+        Our AI engine adapts to your fitness journey with personalized plans, intelligent recommendations, and evolving feedback based on performance and lifestyle.
+      </p>
+      <div class="interactive">
+        <img src="https://via.placeholder.com/150" alt="AI Plan" />
+        <button>Generate My Plan</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

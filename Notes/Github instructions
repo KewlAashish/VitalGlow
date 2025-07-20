@@ -1,0 +1,12 @@
+1. The main branch of this repository is "master"
+
+2. Now what is the workflow?
+
+a. We create a new branch from "master" everytime we start making a feature
+b. Once tested everything we merge this to master.
+
+3. How to commit code?
+
+git add .
+git commit -m "commit message"
+git push

@@ -1,0 +1,14 @@
+1. The main branch of this repository is "master"
+
+2. Now what is the workflow?
+
+Step 0: Update master branch by taking the latest pull from the master branch
+a. We create a new branch from "master" everytime we start making a feature
+b. Once tested everything we merge this to master.
+
+3. How to commit code?
+git add .
+git commit -m "commit message"
+git push -u origin <branch_name>
+
+4. After successfully merging the feature branch to master we should delete the feature branch.

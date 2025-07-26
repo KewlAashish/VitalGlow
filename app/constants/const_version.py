@@ -1,2 +1,0 @@
-CSS_VERSION = "1.0.3"
-JS_VERSION = "1.2.1"

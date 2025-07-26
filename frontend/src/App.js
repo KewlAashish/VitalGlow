@@ -1,10 +1,13 @@
 import React from "react";
+import { BrowserRouter, Routes } from 'react-router-dom';
+import PublicRoutes from "./routes/PublicRoutes";
+
 
 function App() {
   return (
-    <div className="min-h-screen text-white bg-black flex items-center justify-center">
-      <h1 className="text-3xl">King Shit</h1>
-    </div>
+    <BrowserRouter>
+      <PublicRoutes />  
+    </BrowserRouter>
   );
 }
 

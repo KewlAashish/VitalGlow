@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-black to-zinc-900 text-white font-sans">
+    <div className="min-h-screen bg-gradient-to-r from-black to-zinc-900 text-white font-sans select-none">
       {/* Navbar */}
       <nav className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-6 px-8 border-b border-zinc-800">
         <h1 className="text-2xl font-bold tracking-wide text-center sm:text-left mb-4 sm:mb-0">VitalGlow</h1>

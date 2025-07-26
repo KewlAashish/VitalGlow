@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3a3eddb-658e-48a3-b411-2ec80ba3f1f2" name="Changes" comment="(Aashish) More instructions - WIP">
+      <change afterPath="$PROJECT_DIR$/Dockerfile.backend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile.frontend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notes/Plan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes/instructions_development" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/instructions_development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/routes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/constants/const_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/default/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/default/routes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/authPages.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/homePage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/auth/loginPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/auth/signupPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/default/dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/default/home.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="306atb4qEsS2hQq4MxO3lBfDGd1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;aashish/dbIntegrations&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aashi\PycharmProjects\VitalGlow\backend" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-af26db0dccfe-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.26775.22" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3a3eddb-658e-48a3-b411-2ec80ba3f1f2" name="Changes" comment="" />
+      <created>1752950692120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752950692120</updated>
+    </task>
+    <task id="LOCAL-00001" summary="(Aashish) Added instructions on how to handle git when working on a feature">
+      <option name="closed" value="true" />
+      <created>1753028575779</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753028575779</updated>
+    </task>
+    <task id="LOCAL-00002" summary="(Aashish) More instructions - WIP">
+      <option name="closed" value="true" />
+      <created>1753028793624</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753028793624</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="(Aashish) Added instructions on how to handle git when working on a feature" />
+    <MESSAGE value="(Aashish) More instructions - WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="(Aashish) More instructions - WIP" />
+  </component>
+</project>

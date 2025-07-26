@@ -1,5 +1,11 @@
-1. Building the docker image: docker build -t your-flask-app .
-This reads our docker file, create image for our project and tags it as "your-flask-app"
+We have two docker files:
+a. Dockerfile.backend: Handles the up and running for the backend
+b. Dockerfile.frontend: Handles the up and running for the frontend
 
-2. Running the container: docker run -p 5000:5000 your-flask-app
-Starts a container from the image of our app
+Another file which handles both the above is: docker-compose.yml
+
+What does docker-compose.yml do? Run both backend and frontend docker file and start them.
+
+Commands:
+1.  docker-compose down --volumes --remove-orphans | Stops and removes all the containers
+2. docker-compose up --build | Builds the containers for frontend and backend and gets the servers running.

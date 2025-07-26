@@ -1,0 +1,23 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app           # sync source
+      - /app/node_modules         # avoid mounting over container's node_modules
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend

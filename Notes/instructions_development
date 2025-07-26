@@ -7,5 +7,5 @@ Another file which handles both the above is: docker-compose.yml
 What does docker-compose.yml do? Run both backend and frontend docker file and start them.
 
 Commands:
-1. docker-compose down --volumes --remove-orphans | Stops and removes all the containers
+1. docker-compose down --volumes --remove-orphans | Stops and removes all the containers.
 2. docker-compose up --build | Builds the containers for frontend and backend and gets the servers running.

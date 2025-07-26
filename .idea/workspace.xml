@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3a3eddb-658e-48a3-b411-2ec80ba3f1f2" name="Changes" comment="(Aashish) More instructions - WIP">
-      <change afterPath="$PROJECT_DIR$/Dockerfile.backend" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile.frontend" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notes/Plan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes/instructions_development" beforeDir="false" afterPath="$PROJECT_DIR$/Notes/instructions_development" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/routes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/constants/const_version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/default/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/default/routes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/authPages.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/homePage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/auth/loginPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/auth/signupPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default/home.html" beforeDir="false" />
-    </list>
+    <list default="true" id="e3a3eddb-658e-48a3-b411-2ec80ba3f1f2" name="Changes" comment="(Aashish) More instructions - WIP" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,13 +34,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;aashish/dbIntegrations&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "aashish/homePage"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\aashi\PycharmProjects\VitalGlow\backend" />

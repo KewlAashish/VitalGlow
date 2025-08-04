@@ -1,0 +1,130 @@
+trainers (collection)
+  └── {trainer_email} (document)
+      ├── email
+      ├── created_at
+      ├── password_hash
+      ├── username
+      ├── client_summary: {
+             client_uid_1: {
+                 name, age, goal, email, height_cm, weight_kg
+             },
+             client_uid_2: {...}
+         }
+
+clients (collection)
+  └── {client_uid} (document)
+      ├── trainer_email
+      ├── name
+      ├── age
+      ├── goal
+      ├── email
+      ├── height_cm
+      ├── weight_kg
+      ├── created_at
+
+client_logs (collection)
+  └── {client_uid}_{yyyy-mm-dd} (document)
+      ├── date
+      ├── client_uid
+      ├── trainer_email
+      ├── weight (kg)
+      ├── training_log: {
+             workout_type: "Strength",
+             duration_min: 45,
+             exercises: [
+                 { name: "Squat", sets: 3, reps: 10, notes: 60 },
+                 { name: "Pushup", sets: 3, reps: 15,  }
+             ]
+         }
+      ├── nutrition_logs: [
+            {
+            meal: "Breakfast",
+            items: [
+                { "name": "Oats", "quantity": "1 cup", "calories": 300, "protein": 10, "carbs": 50, "fats": 5 },
+                { "name": "Banana", "quantity": "1", "calories": 100, "protein": 1, "carbs": 27, "fats": 0.3 }
+            ]
+            },
+            {
+            meal: "Lunch",
+            items: [...]
+            }
+        ]
+
+
+An example of a client_logs entity:
+
+{
+  "client_id": "abc123",
+  "date": "2025-08-05",
+  "weight_kg": 84.5,
+
+  "training_logs": [
+    {
+      "type": "Strength Training",
+      "exercises": [
+        {
+          "name": "Squats",
+          "sets": 4,
+          "reps": 12,
+          "notes": "Used 60kg barbell"
+        },
+        {
+          "name": "Deadlifts",
+          "sets": 3,
+          "reps": 10,
+          "notes": "Felt strong"
+        }
+      ]
+    },
+    {
+      "type": "Mobility",
+      "exercises": [
+        {
+          "name": "Hip Circles",
+          "sets": 2,
+          "reps": 15,
+          "notes": ""
+        }
+      ]
+    }
+  ],
+
+  "nutrition_logs": [
+    {
+      "meal": "Breakfast",
+      "items": [
+        {
+          "name": "Oats",
+          "quantity": "1 cup",
+          "calories": 300,
+          "protein": 10,
+          "carbs": 50,
+          "fats": 5
+        },
+        {
+          "name": "Banana",
+          "quantity": "1 medium",
+          "calories": 100,
+          "protein": 1,
+          "carbs": 27,
+          "fats": 0.3
+        }
+      ]
+    },
+    {
+      "meal": "Dinner",
+      "items": [
+        {
+          "name": "Grilled Chicken",
+          "quantity": "200g",
+          "calories": 400,
+          "protein": 40,
+          "carbs": 0,
+          "fats": 20
+        }
+      ]
+    }
+  ],
+
+  "last_updated": "2025-08-05T18:20:00Z"
+}

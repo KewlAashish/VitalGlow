@@ -12,3 +12,45 @@ What is there for clients?
 3. Fitness challenges to take part in
 4. Personal Fitness tracker
 5. AI Recommendations: Workout suggestions + Challenges and more
+
+MVP 1
+
+💡 MVP Plan for Trainer Platform
+(Use-case driven. Just enough to launch, test, and impress.)
+
+✅ 1. Trainer Authentication
+Use Cases:
+Trainer can sign up and create an account
+Trainer can log in securely
+Trainer session is persisted via local storage
+
+✅ 2. Trainer Dashboard (Home Page after login)
+Use Cases:
+View list of all clients
+Search/filter clients (basic name filter)
+Navigate to individual client profile
+Add new client
+Delete a client (with confirm modal)
+
+✅ 3. Client Profile (Full Detail Page)
+Use Cases:
+View client basic info: name, age, goal, etc.
+Edit client info (optional for MVP, or phase 1.5)
+
+✅ 4. Client Logs & Tracking
+Use Cases (per client):
+Add a daily weight log
+View past weight entries (chart view optional)
+Add a workout log (type, duration, notes)
+View all past workouts (basic list)
+
+✅ 5. Weekly Diet Plan (Basic Editable Table)
+Use Cases:
+Trainer can input a weekly plan (e.g., table of meals per day)
+Optional: Show calories/protein values (manual entry for MVP)
+
+✅ 6. Basic Analytics on Dashboard
+Use Cases:
+Show number of clients
+Show list of clients who missed logs in last 3 days (MVP-lite)
+(Optional) Weight progress sparkline for each client

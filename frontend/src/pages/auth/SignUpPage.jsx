@@ -1,16 +1,47 @@
 // File: src/pages/SignUpPage.jsx
 
-import React from "react";
+import React, { useState } from "react";
 
 const SignUpPage = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");   
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // prevent page reload
+
+    try {
+      const response = await fetch('http://localhost:5000/api/auth/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password, name: "Komal" }), // name is hardcoded for now
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage("✅ Sign up successful! Please log in.");
+        setEmail("");
+        setPassword("");
+      } else {
+        setMessage(data.error || "❌ An error occurred during sign up.");
+      }
+    } catch (error) {   
+      console.error("Error during sign up:", error);
+      setMessage("❌ Server error. Please try again.");
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-black to-zinc-900 text-white font-sans flex flex-col lg:flex-row select-none">
       {/* Left - Info */}
       <div className="lg:w-1/2 flex items-center justify-center p-8 bg-gradient-to-b from-zinc-900 to-black">
         <div className="flex flex-col justify-center h-full text-center lg:text-left max-w-md space-y-6">
-        <h2 className="text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-purple-300 leading-none mb-4 pb-2">
-          Build Your <br /> Training Empire
-        </h2>
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-purple-300 leading-none mb-4 pb-2">
+            Build Your <br /> Training Empire
+          </h2>
           <p className="text-zinc-300 text-md sm:text-lg">
             Create your free VitalGlow trainer account and start managing clients, scheduling plans, and scaling your business with ease.
           </p>
@@ -39,14 +70,18 @@ const SignUpPage = () => {
       <div className="lg:w-1/2 flex items-center justify-center p-8">
         <div className="bg-zinc-800 p-8 rounded-lg shadow-lg w-full max-w-md">
           <h1 className="text-2xl font-bold mb-6 text-center">Sign Up for VitalGlow</h1>
-          <form className="space-y-4">
+          
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
               <label className="block text-sm mb-2" htmlFor="email">Email</label>
               <input
                 type="email"
                 id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full p-2 bg-zinc-700 border border-zinc-600 rounded focus:outline-none focus:ring-2 focus:ring-violet-500"
                 placeholder="Enter your email"
+                required
               />
             </div>
             <div>
@@ -54,8 +89,11 @@ const SignUpPage = () => {
               <input
                 type="password"
                 id="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 className="w-full p-2 bg-zinc-700 border border-zinc-600 rounded focus:outline-none focus:ring-2 focus:ring-violet-500"
                 placeholder="Create a password"
+                required
               />
             </div>
             <button
@@ -64,6 +102,12 @@ const SignUpPage = () => {
             >
               Sign Up
             </button>
+
+            {/* Show server response message */}
+            {message && (
+              <p className="text-center text-sm mt-2 text-zinc-300">{message}</p>
+            )}
+
             <p className="text-sm text-zinc-400 text-center mt-4">
               Already have an account? <a href="/login" className="text-violet-400 hover:underline">Login</a>
             </p>

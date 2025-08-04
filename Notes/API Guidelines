@@ -1,0 +1,4 @@
+Every API should return 3 things:
+a. status: error or success
+b. message: 
+c. data: optional

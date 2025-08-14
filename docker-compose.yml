@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
   backend:
     build:
@@ -7,18 +9,23 @@ services:
       - .env
     ports:
       - "5000:5000"
+    env_file:
+      - .env                     # only includes GOOGLE_APPLICATION_CREDENTIALS
     volumes:
       - ./backend:/app
       - ./secrets/firebase-key.json:/app/firebase-key.json
+  
   frontend:
     build:
       context: .
       dockerfile: Dockerfile.frontend
+      args:
+        REACT_APP_API_BASE_URL: http://localhost:5000
     ports:
       - "3000:3000"
     volumes:
-      - ./frontend:/app           # sync source
-      - /app/node_modules         # avoid mounting over container's node_modules
+      - ./frontend:/app
+      - /app/node_modules        # avoid overwriting node_modules in container
     stdin_open: true
     tty: true
     depends_on:

@@ -13,6 +13,7 @@ export default function DashboardPage() {
   const [showAddClientModal, setShowAddClientModal] = useState(false);
   const [editClient, setEditClient] = useState(null);
   const [deleteClient, setDeleteClient] = useState(null);
+  const API_BASE = process.env.REACT_APP_API_BASE_URL;
 
   const handleClientUpdate = (updatedClient) => {
     setClients((prev) =>
@@ -26,7 +27,7 @@ export default function DashboardPage() {
   const fetchTrainerSummary = async (email) => {
     console.log("Fetching trainer summary for email:", email);
     try {
-      const response = await fetch(`http://localhost:5000/api/trainer/summary/${email}`);
+      const response = await fetch(`${API_BASE}/api/trainer/summary/${email}`);
       const result = await response.json();
 
       if (!response.ok) {

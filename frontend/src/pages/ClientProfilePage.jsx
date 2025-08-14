@@ -10,6 +10,7 @@ export default function ClientProfilePage() {
   const [clientData, setClientData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null); 
+
   const API_BASE = process.env.REACT_APP_API_BASE_URL;
 
     useEffect(() => {

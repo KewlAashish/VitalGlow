@@ -18,6 +18,7 @@ export default function WeeklyTable({ clientId }) {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [weekDates, setWeekDates] = useState([]);
   const [weeklyLogs, setWeeklyLogs] = useState({});
+
   const API_BASE = process.env.REACT_APP_API_BASE_URL;
 
   useEffect(() => {

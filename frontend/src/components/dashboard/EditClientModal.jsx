@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 export default function EditClientModal({ client, onClose, onUpdate }) {
   const [form, setForm] = useState({ ...client });
+  const API_BASE = process.env.REACT_APP_API_BASE_URL;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,7 +17,7 @@ export default function EditClientModal({ client, onClose, onUpdate }) {
     const payload = { ...form, trainer_email: user.email };
 
     try {
-      const response = await fetch(`http://localhost:5000/api/trainer/client/${client.id}`, {
+      const response = await fetch(`${API_BASE}/api/trainer/client/${client.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

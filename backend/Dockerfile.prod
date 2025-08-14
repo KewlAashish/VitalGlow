@@ -1,0 +1,18 @@
+FROM python:3.10-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PORT=8080
+
+WORKDIR /app
+
+COPY backend/requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY backend /app
+
+# If you later mount firebase-key.json via Secret Manager, set this env in deploy command:
+# ENV GOOGLE_APPLICATION_CREDENTIALS=/app/firebase-key.json
+
+# Gunicorn serving the wsgi app on $PORT for Cloud Run
+CMD exec gunicorn --bind :${PORT} --workers 3 --timeout 120 --keep-alive 5 wsgi:app

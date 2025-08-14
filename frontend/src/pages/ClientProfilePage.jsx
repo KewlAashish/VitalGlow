@@ -10,11 +10,12 @@ export default function ClientProfilePage() {
   const [clientData, setClientData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null); 
+  const API_BASE = process.env.REACT_APP_API_BASE_URL;
 
     useEffect(() => {
     const fetchClientInfo = async () => {
         try {
-        const res = await fetch(`http://localhost:5000/api/trainer/client/${clientId}`);
+        const res = await fetch(`${API_BASE}/api/trainer/client/${clientId}`);
         const data = await res.json();
 
         if (!res.ok) throw new Error(data.message || "Failed to fetch client data");

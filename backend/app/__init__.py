@@ -14,4 +14,8 @@ def create_app():
     from .routes.client_routes import client_bp
     app.register_blueprint(client_bp, url_prefix='/api/client')
 
+    @app.get("/healthz")
+    def healthz():
+        return {"status": "ok"}, 200
+
     return app

@@ -3,6 +3,10 @@ FROM node:18
 WORKDIR /app
 COPY frontend /app
 
+# Optional: pass environment variable during build (won't be used by CRA at runtime)
+ARG REACT_APP_API_BASE_URL
+ENV REACT_APP_API_BASE_URL=$REACT_APP_API_BASE_URL
+
 RUN npm install
 
 EXPOSE 3000

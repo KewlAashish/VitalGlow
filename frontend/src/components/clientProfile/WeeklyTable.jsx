@@ -18,6 +18,7 @@ export default function WeeklyTable({ clientId }) {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [weekDates, setWeekDates] = useState([]);
   const [weeklyLogs, setWeeklyLogs] = useState({});
+  const API_BASE = process.env.REACT_APP_API_BASE_URL;
 
   useEffect(() => {
     const start = startOfWeek(currentDate, { weekStartsOn: 1 });
@@ -34,7 +35,7 @@ export default function WeeklyTable({ clientId }) {
     const dateStr = format(date, "yyyy-MM-dd");
     try {
       const res = await fetch(
-        `http://localhost:5000/api/client/logs/${clientId}/${dateStr}`
+        `${API_BASE}/api/client/logs/${clientId}/${dateStr}`
       );
       const data = await res.json();
       if (res.ok && data?.data) {
